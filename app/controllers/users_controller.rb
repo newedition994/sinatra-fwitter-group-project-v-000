@@ -5,7 +5,7 @@ class UsersController < ApplicationController
     erb :'users/show'
   end
 
-  get '/signup' do
+  get "/signup" do
     if !logged_in?
       erb :'user/create_user'
     else
